@@ -1,6 +1,6 @@
-import psycopg2
-import os 
-
-connection_link = psycopg2.connect(os.getenv("DB_LINK"))
+CREATE_NBA_PLAYERS_TABLE = ("CREATE TABLE IF NOT EXISTS players (PLAYER_NAME ,TEAM_ID,PLAYER_ID,SEASON)")
 
 GET_ALL_PLAYERS = "SELCT * FROM nba_players"
+
+
+
