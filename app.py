@@ -11,7 +11,7 @@ app = Flask(__name__)
 connection_link = psycopg2.connect(os.getenv("DB_LINK"))
 cursor = connection_link.cursor()
 fetch_one = cursor.fetchone()
-fethc_all = cursor.fetchall()
+fetch_all = cursor.fetchall()
 
 
 @app.route("/")
