@@ -13,7 +13,6 @@ cursor = connection_link.cursor()
 fetch_one = cursor.fetchone()
 fetch_all = cursor.fetchall()
 
-
 @app.route("/")
 def hello_world():
     return "<p>Hello, World!</p>"
