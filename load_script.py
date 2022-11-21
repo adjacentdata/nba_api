@@ -39,24 +39,14 @@ def to_json(query_data):
 def test():
     cursor.execute(Players.GET_ALL_PLAYERS)
     dbop = cursor.fetchall()
-    print(json.dumps(db)) 
-    return to_json(jop)
+    return dbop
 
 print(test())
 connection_link.commit()
 cursor.close()
 
 
-t=[("Royce O'Neale", 1610612762, 1626220, 2019), 
-('Bojan Bogdanovic', 1610612762, 202711, 2019), 
-('Rudy Gobert', 1610612762, 203497, 2019), 
-('Donovan Mitchell', 1610612762, 1628378, 2019), 
-('Mike Conley', 1610612762, 201144, 2019), 
-('Joe Ingles', 1610612762, 204060, 2019), 
-('Ed Davis', 1610612762, 202334, 2019), 
-('Jeff Green', 1610612762, 201145, 2019), 
-('Dante Exum', 1610612762, 203957, 2019), 
-('Emmanuel Mudiay', 1610612762, 1626144, 2019)]
+
 
 
     
