@@ -7,8 +7,4 @@ class Players:
         SEASON int)
         """)
         
-    GET_ALL_PLAYERS = "SELCT * FROM nba_players"
-
-    INSERT_PLAYER = "INSERT INTO players (player_name, team_id, player_id, season) VALUES (%s, %s, %s) "
-
-
+    GET_ALL_PLAYERS = "SELECT * FROM players LIMIT 10"

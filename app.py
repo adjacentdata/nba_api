@@ -13,8 +13,7 @@ db_password=os.getenv('DB_PASSWORD')
 connection_link = psycopg2.connect(database='nba_api', user=db_user, password=db_password, host='127.0.0.1', port='5432')
 cursor = connection_link.cursor()
 
-fetch_one = cursor.fetchone()
-fetch_all = cursor.fetchall()
+
 
 @app.route("/")
 def hello_world():
