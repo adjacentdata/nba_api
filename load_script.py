@@ -1,9 +1,6 @@
 import psycopg2
 import os 
-import json
 from queries import Players
-
-
 
 pathways = {
     'game_details': 'project_files/nba_data/games_details.csv', 
