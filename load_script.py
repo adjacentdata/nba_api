@@ -16,7 +16,7 @@ connection_link = psycopg2.connect(database='nba_api', user=db_user, password=db
 cursor = connection_link.cursor()
 
 def create_tables():
-    cursor.execute(Players.CREATE_NBA_PLAYERS_TABLE)
+    cursor.execute(Players.CREATE_NBA_TEAMS_TABLE)
     connection_link.commit()
 
 def load_data_into_db(pathways):
@@ -38,7 +38,10 @@ def test():
     dbop = cursor.fetchall()
     return dbop
 
-print(test())
+create_tables()
+load_data_into_db(pathways)
+
+        
 connection_link.commit()
 cursor.close()
 
